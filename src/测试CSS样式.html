@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    div {
+      width: 500px;
+      border: 1px solid black;
+      height: 200px;
+      margin: 0 auto;
+    }
+
+    div div {
+      height: 100px;
+    }
+    div .first span:first-child,
+    div .last span:first-child
+    {
+      background-color: blueviolet;
+      float: left;
+    }
+
+    div .last span:last-child,
+    div .first span:last-child {
+      background-color: rebeccapurple;
+      float: right;
+    }
+    span {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <div class="first">
+    <span>1左边</span>
+    <span>1右边</span>
+  </div>
+  <div class="last">
+    <span>2左边</span>
+    <span>2右边</span>
+  </div>
+</div>
+
+</body>
+</html>
